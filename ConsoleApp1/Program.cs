@@ -2,7 +2,7 @@
 
 namespace ConsoleApp1
 {
-    static class Program
+    internal static class Program
     {
         static int Solve(string opr)
         {
@@ -10,7 +10,7 @@ namespace ConsoleApp1
             // Complete this function
 
             var x = Int32.Parse(opr.Substring(0, 1));
-            var y = Int32.Parse(opr.Substring(2,1));
+            var y = Int32.Parse(opr.Substring(2, 1));
             var result2 = 0;
             var z = opr.Substring(1, 1);
             if (x < 0 || y > 9) return result2;
@@ -31,6 +31,8 @@ namespace ConsoleApp1
             string opr = Console.ReadLine();
             int result = Solve(opr);
             Console.WriteLine(result);
+
+
         }
     }
 }
