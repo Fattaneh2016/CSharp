@@ -26,14 +26,23 @@ namespace ConsoleApp1
             return result2;
         }
 
-        static void Main()
+        static void  Main(string[] args)
         {
             string opr = Console.ReadLine();
             int result = Solve(opr);
             Console.WriteLine(result);
+        }
+        
 
+        //*an array with 5 rows and 2 columns */
+        //Formatting Output
+
+        
 
         }
     }
-}
+
+
+
+    
 

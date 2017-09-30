@@ -24,6 +24,46 @@ public class Class1
             }
         }
     }
-	    
 
-   
+
+
+
+static void Main(String[] args)
+{
+int n = Convert.ToInt32(Console.ReadLine());
+
+//char d = Convert.ToChar(Console.ReadLine());
+string[] tokensX = Console.ReadLine().Split(' ');
+
+int x = Convert.ToInt32(tokensX[0]);
+
+int y = Convert.ToInt32(tokensX[1]);
+
+// Write Your Code Here
+//Console.WriteLine(d);
+var myArray = new int[n, n];
+
+int N = n * n;
+int i;
+
+int j;
+
+    for (i = 0; i<n;
+i++)
+{
+    //Console.Write("{0}", i + 1);
+    for (j = 0; j < n; j++)
+    {
+        if (x == 1 && y == 0)
+        {
+            //myArray[i, j] = N;
+            myArray[i, j] = i * j;
+            Console.WriteLine("{0}", myArray[i, j]);
+        }
+        N = N - 1;
+    }
+    Console.WriteLine("\n");
+    Console.ReadLine();
+}
+
+}
